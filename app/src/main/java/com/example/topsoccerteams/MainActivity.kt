@@ -2,9 +2,30 @@ package com.example.topsoccerteams
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.topsoccerteams.tostring
+import com.google.firebase.firestore.model.Values
 import java.util.Arrays
+import kotlin.toString
+
+fun logArrValues(arr: Array<String>){
+    val Limit = null
+    if (Limit == 0)
+    Log.v("Array Values: ", Arrays.toString(arr))
+    else{
+        val limit = null
+        Log.v("Array Values", Array.toString(
+            arr.sliceArray(0..limit - 1))
+        )
+    }
+
+}
+
+
+
+
+
 
 private val Unit.tostring: Any
 
